@@ -121,3 +121,8 @@ variable "elastic_search_case_index_type" {
   type = "string"
   default = "case"
 }
+
+variable "appinsights_instrumentation_key" {
+  description = "Instrumentation key of the App Insights instance this webapp should use. Module will create own App Insights resource if this is not provided"
+  default = ""
+}
